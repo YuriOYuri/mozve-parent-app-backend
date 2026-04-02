@@ -13,7 +13,7 @@ class AuthenticationController {
       req.query.code as string
     );
 
-    const frontendUrl = process.env.FRONTEND_URL as string;
+    const frontendUrl = process.env.FRONTEND_URL || "http://localhost:5173";
 
     return res.redirect(
       `${frontendUrl}?store_id=${data.user_id}`

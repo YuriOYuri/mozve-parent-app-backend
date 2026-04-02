@@ -21,7 +21,7 @@ export const beforeCheckClientMiddleware = (
 
   if (errors.length > 0) {
     const message =
-      "It is necessary to set request variables at .env-example file and rename it to .env";
+      "Configure the required environment variables in api/.env based on api/.env.example";
     return next(
       new HttpErrorException(message, `envs: [${errors.join(",")}] is required`)
     );

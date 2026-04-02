@@ -2,12 +2,11 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import passport from "passport";
-// @ts-ignore
 import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({
-  path: path.resolve(".env"),
+  path: path.resolve(__dirname, "..", ".env"),
 });
 
 import { AppRoutes } from "@config";
