@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { BadRequestException, HttpErrorException } from "@utils";
+import { BadRequestException, HttpErrorException } from "../utils";
 
 export const errorHandlingMiddleware = (
   err: any,

@@ -1,6 +1,6 @@
 import passport from "passport";
 import passportJWT from "passport-jwt";
-import { userRepository } from "@repository";
+import { userRepository } from "../repository";
 
 const JWTStrategy = passportJWT.Strategy;
 const ExtractJWT = passportJWT.ExtractJwt;

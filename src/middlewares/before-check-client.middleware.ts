@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { HttpErrorException } from "@utils";
+import { HttpErrorException } from "../utils";
 
 const requiredEnvKeys = [
   "TIENDANUBE_AUTENTICATION_URL",

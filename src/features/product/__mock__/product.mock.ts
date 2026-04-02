@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { IProductRequest } from "@features/product";
+import { IProductRequest } from "../interface/product.interface";
 
 export const generateProductMock = (): IProductRequest => {
   return {

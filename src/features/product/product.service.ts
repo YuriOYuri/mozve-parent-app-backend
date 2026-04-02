@@ -1,13 +1,13 @@
 import axios from "axios";
-import { generateProductMock } from "@features/product/__mock__/product.mock";
-import { IProductRequest, IProductResponse } from "@features/product";
+import { generateProductMock } from "./__mock__/product.mock";
+import { IProductRequest, IProductResponse } from "./interface/product.interface";
 import {
   getProductMetadataCollection,
   GroupDocument,
   GroupProductDocument,
   productDocumentTypes,
 } from "../../database";
-import { userRepository } from "@repository";
+import { userRepository } from "../../repository";
 
 class ProductService {
   private normalizeSearchValue(value: string) {

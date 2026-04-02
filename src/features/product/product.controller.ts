@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
-import { StatusCode } from "@utils";
-import { ProductService } from "@features/product";
-import { preferencesService } from "@features/preferences";
-import { groupsService } from "@features/groups/groups.service";
+import { StatusCode } from "../../utils";
+import { ProductService } from ".";
+import { preferencesService } from "../preferences";
+import { groupsService } from "../groups/groups.service";
 
 class ProductController {
   async create(req: Request, res: Response, next: NextFunction) {

@@ -1,9 +1,9 @@
 import { Router } from "express";
 import passport from "passport";
 
-import { AuthenticationController } from "@features/auth";
-import { PreferencesController } from "@features/preferences";
-import { ProductController } from "@features/product";
+import { AuthenticationController } from "../features/auth";
+import { PreferencesController } from "../features/preferences";
+import { ProductController } from "../features/product";
 import { GroupsController } from "../features/groups/groups.controller";
 
 const routes = Router();

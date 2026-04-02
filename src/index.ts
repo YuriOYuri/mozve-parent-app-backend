@@ -9,11 +9,11 @@ dotenv.config({
   path: path.resolve(__dirname, "..", ".env"),
 });
 
-import { AppRoutes } from "@config";
+import { AppRoutes } from "./config";
 import {
   beforeCheckClientMiddleware,
   errorHandlingMiddleware,
-} from "@middlewares";
+} from "./middlewares";
 import "./utils/passaport-strategy";
 import { connectDatabase } from "./database";
 import { groupsService } from "./features/groups/groups.service";

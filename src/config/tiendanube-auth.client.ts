@@ -1,5 +1,5 @@
 import axios from "axios";
-import { HttpErrorException } from "@utils";
+import { HttpErrorException } from "../utils";
 
 export const tiendanubeAuthClient = axios.create({
   baseURL: process.env.TIENDANUBE_AUTENTICATION_URL,

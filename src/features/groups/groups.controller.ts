@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { groupsService } from "./groups.service";
-import { productService } from "@features/product/product.service";
+import { productService } from "../product/product.service";
 
 export class GroupsController {
 

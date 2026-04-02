@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { StatusCode } from "@utils";
-import { InstallAppService, AuthService } from "@features/auth";
+import { StatusCode } from "../../utils";
+import { InstallAppService, AuthService } from ".";
 
 class AuthenticationController {
   async install(

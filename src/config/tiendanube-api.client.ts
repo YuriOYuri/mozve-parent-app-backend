@@ -1,6 +1,6 @@
 import axios, { AxiosHeaders } from "axios";
-import { userRepository } from "@repository";
-import { HttpErrorException } from "@utils";
+import { userRepository } from "../repository";
+import { HttpErrorException } from "../utils";
 
 export const tiendanubeApiClient = axios.create({
   baseURL: process.env.TIENDANUBE_API_URL,

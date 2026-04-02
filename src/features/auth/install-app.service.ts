@@ -1,10 +1,10 @@
-import { tiendanubeAuthClient } from "@config";
-import { BadRequestException } from "@utils";
-import { userRepository } from "@repository";
+import { tiendanubeAuthClient } from "../../config";
+import { BadRequestException } from "../../utils";
+import { userRepository } from "../../repository";
 import {
   TiendanubeAuthRequest,
   TiendanubeAuthInterface,
-} from "@features/auth";
+} from ".";
 
 class InstallAppService {
   public async install(code: string): Promise<TiendanubeAuthInterface> {

@@ -1,5 +1,5 @@
-import { TiendanubeAuthInterface } from "@features/auth";
-import { HttpErrorException } from "@utils";
+import { TiendanubeAuthInterface } from "../features/auth";
+import { HttpErrorException } from "../utils";
 import { CredentialDocument, getCredentialsCollection } from "../database";
 
 class UserRepository {

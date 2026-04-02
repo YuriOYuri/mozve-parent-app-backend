@@ -1,5 +1,5 @@
-import { userRepository } from "@repository";
-import { TiendanubeAuthInterface, LoginRequestInterface } from "@features/auth";
+import { userRepository } from "../../repository";
+import { TiendanubeAuthInterface, LoginRequestInterface } from ".";
 
 /**
  * In production mode, the back-end needs to implement its own authentication for the API.

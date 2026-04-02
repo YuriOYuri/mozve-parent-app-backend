@@ -1,4 +1,4 @@
-import { StatusCode } from "@utils";
+import { StatusCode } from "./statusCode.enum";
 
 export class HttpErrorException {
   message: string;
