@@ -90,8 +90,8 @@
   }
 
   const API_BASE =
-    'https://howard-handbags-snap-pac.trycloudflare.com'
-    // ISSO AQUI MUDA SEMPRE
+    'https://mozve-parent-app-backend.onrender.com'
+    // mudar isso sempr
 
   const DEFAULT_PREFERENCES = {
     appActive: true,

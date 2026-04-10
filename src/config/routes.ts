@@ -5,9 +5,14 @@ import { AuthenticationController } from "../features/auth";
 import { PreferencesController } from "../features/preferences";
 import { ProductController } from "../features/product";
 import { GroupsController } from "../features/groups/groups.controller";
+import { StatusCode } from "../utils";
 
 const routes = Router();
 const groupsController = new GroupsController();
+
+routes.get("/health", (_, res) =>
+  res.status(StatusCode.OK).json({ status: "ok" })
+);
 
 /* =========================
    AUTH

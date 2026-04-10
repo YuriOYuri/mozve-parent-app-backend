@@ -12,6 +12,5 @@ router.get("/groups/:id/products", groupsController.getProducts);
 
 router.delete("/groups/:id/products/:productId", groupsController.removeProduct);
 
-router.delete("/groups/:id", groupsController.delete); // ← ESTA LINHA
-
+router.delete("/groups/:id", groupsController.delete);
 export default router;

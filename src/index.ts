@@ -34,6 +34,9 @@ app.options("*", cors(corsOptions));
 
 app.use(express.json());
 
+/* 🔥 ADICIONADO: servir arquivos estáticos da pasta api/ (onde está o script.js) */
+app.use(express.static(path.resolve(__dirname, "..")));
+
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
